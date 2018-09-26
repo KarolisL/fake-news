@@ -5,6 +5,8 @@ services:
     build: ./backend
     ports:
       - 4001:3001
+    volumes:
+      - ./data:/frodo/data
   
   frontend:
     image: fake-nginx:latest
