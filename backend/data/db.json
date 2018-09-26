@@ -1,0 +1,32 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Trump says ‘Fake News is going crazy’ after Putin summit",
+      "body": "A defiant President Donald Trump on Tuesday defended his meeting with Vladimir Putin, saying it went “even better” than his contentious summit with NATO leaders last week.",
+      "tagId": 1
+    },
+    {
+      "id": 2,
+      "title": "Politicians are using fake news schemes to get elected",
+      "body": "Media manipulation has always been a part of the political playbook, but technology has enabled politicians to take the practice a step further by changing or mimicking real stories and news outlets to mislead voters.",
+      "tagId": 1
+    },
+    {
+      "id": 3,
+      "title": "Facebook refuses to remove fake news, but will demote it",
+      "body": "In the name of free speech, Facebook said, it’s keeping all the bilge water, be it pumped out by the right or left… though the platform intends to push fakery down deeper into the holding tank by demoting it.",
+      "tagId": 2
+    }
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "name": "politics"
+    },
+    {
+      "id": 2,
+      "name": "social-media"
+    }
+  ]
+}
