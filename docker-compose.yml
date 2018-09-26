@@ -1,0 +1,12 @@
+# https://docs.docker.com/compose/compose-file/#reference-and-guidelines
+version: "3"
+services:
+  backend:
+    build: ./backend
+    ports:
+      - 4001:3001
+  
+  frontend:
+    image: fake-nginx:latest
+    ports:
+      - 4000:80
