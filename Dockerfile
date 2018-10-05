@@ -3,9 +3,10 @@ FROM node as builder
 RUN mkdir /my-precious
 WORKDIR /my-precious
 
-COPY . /my-precious
-
+COPY ./package.json /my-precious/package.json
 RUN yarn install
+
+COPY . /my-precious
 RUN yarn build
 
 FROM nginx
