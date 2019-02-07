@@ -5,9 +5,10 @@ ENV WORKDIR /app
 RUN mkdir "$WORKDIR"
 WORKDIR $WORKDIR
 
-COPY . $WORKDIR
-
+COPY package.json $WORKDIR/package.json
 RUN yarn install
+
+COPY . $WORKDIR
 RUN yarn build
 
 FROM nginx
@@ -20,4 +21,5 @@ COPY --from=builder $WORKDIR/build /usr/share/nginx/html/
 
 RUN find /usr/share/nginx/html -type f -exec chmod 644 {} \;
 RUN find /usr/share/nginx/html -type d -exec chmod 755 {} \;
+
 
